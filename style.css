@@ -1,0 +1,186 @@
+header{
+      text-align :center;
+      background-color: #474e5d;
+      height: 120px;
+      margin-top: 0px; 
+      padding: 20px;
+      width: 100%;
+}
+ul{
+      list-style-type: none;
+      font-size:25px; 
+      font-weight:bold;
+}
+li{
+      display:inline;
+      list-style-type: none;
+      width: 100%;
+      padding: 10px;
+      
+
+}
+ul li a{
+      text-decoration: none;
+      color: aliceblue;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+}    
+#one{
+      color: aliceblue;
+      font-size:20px;    
+      background-image:url(home.jpg);
+      background-size: 100%;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      height: 540px;
+      width: 100%;
+      padding: 20px; 
+}
+a:link{
+      color: aqua;
+}
+a:visited{
+color: red;
+}
+a:hover{
+      color: blue;
+}
+
+#contact{
+      
+      text-size-adjust: 25px;
+      height: 200px;
+      width: 230px;
+      padding: 20px;
+       
+}
+button{
+      background-color: rgb(250, 15, 15);
+      width: 70px;
+      border-radius: 50px;
+      color: aliceblue;
+      
+}
+h3{
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#pictures{
+      text-align: center;
+      font-size:20px;
+      height:x;
+}
+footer{
+      background-color:rgb(160, 34, 34); 
+      text-align: center;
+      height: 60px;px;
+      padding: 20px;
+      width: 100%;
+      color: aliceblue;
+}
+.font{
+      color: rgb(7, 180, 248);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+      color:white ;
+      font-weight: lighter;
+      font-family: wide latin;
+}
+.sheet{
+      float:left;
+      color:#ff7200;
+      font-size: 25px;
+      background: local;     
+}
+.contact-section {
+      padding: 50px;
+      text-align: center;
+      font-size: 15px;
+      color: rgb(8, 8, 8);
+    
+}
+h{
+      color:black;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 35px;
+      font-weight: bold;
+}
+buttonh{
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      padding: 20px;
+      float: right;
+      height: 80px;
+}
+#featured-projects{
+      text-align: center;
+      height: 650px;
+
+}
+.projects-page{
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      font-size:px ;
+}    
+.projects-page h1{
+      font-size: 25px;
+      margin-top: 0;
+ }   
+.projects-page ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+}    
+.projects-page li {
+      margin-bottom: 1em;
+}    
+.projects-page li h2 {
+      font-size:25px;
+}    
+.projects-page li img {
+      width: 100px;
+      
+      margin-right: 10px;
+}
+.contact-page{
+      text-align: center;
+      
+}
+#action{
+      height: 380px;
+      width: 100px;
+      float: le;
+}
+.contact-page h1 {
+      font-size: 2em;
+      margin-top: 0;
+}   
+.contact-page p{
+      margin-bottom: 1em;
+}
+.contact-page form {
+      width: 50%;
+      margin: 0 auto;
+}
+.contact-page form input {
+      margin-bottom: 1em;
+}
+.contact-page form textarea {
+      margin-bottom: 1em;
+}
+.contact-page form input, .contact-page form textarea {
+      border: 1px solid #ccc;
+      padding: 10px;
+}   
+
+
+
+      
+
+
+
+
+
