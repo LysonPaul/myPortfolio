@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DbcHouse Design|welcome </title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <script>
+      function validateForm()
+       {
+        var x = document.form["myForm"]["fname"].value;
+         var name = document.form["myForm"]["sname"].value;
+         var email = document.form["myForm"]["email address"].value;
+         var message = document.form["myForm"]["textarea"].value;
+
+        if (x === '') {
+        alert('Space must be filled.');
+        return ;
+        }
+        else if(name === '') {
+        alert('Space must be filled.');
+        return ;
+        }
+        else if (email === '') {
+        alert('Please enter your email address.');
+        return;
+        }
+
+        if (message === '') {
+        alert('Please enter your message.');
+        return ;
+        }
+      }
+    </script>
+    <body>
+    <header>
+      <div>
+        <p class="sheet">Paul Lyson
+        </p> 
+         <h1>
+          <span class="font"><i><b>Dbc</b></i></span>House Design</h1> 
+      </div>
+        <ul>           
+          <li><a href="index.html"><b>  Home</b></a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+      <section>
+        <div class="contact-section">
+          <h>Contact Us</h>
+          <p>Some text about who we are and what we do.</p>
+          <p>Resize the browser window to see that this page is responsive by the way.</p>
+        </div>
+      </section>
+      <section>
+          <div class="contact-page">
+            <p>
+              Please feel free to contact us with any questions or inquiries.
+            </p>
+            <form id="action">
+            <form  name="myform" method="post" onsubmit="return validateForm()" >
+              First Name:<input type="text" name="Fname">
+              SurName:<input type="text" name="Sname">
+              Email address:<input type="email" name="Email address">
+              <textarea placeholder="Tell us your Message"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+            <p>You can also reach us by phone at <strong>0990607716</strong> 
+            or by visiting our office at <strong>Luwinga near green Lodge,CA 12345</strong>.</p>
+          </div>
+      </section>
+    <footer>
+      <p>
+        Dbchousedesign@gmail.com, Copyright &copy; #2023
+      </p>
+    </footer>
+    </body>
+  </body>
+</html>
