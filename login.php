@@ -8,7 +8,7 @@ if(isset($_POST['username'])&&isset($_POST['password'])){
       $password=$_POST['password'];
 
       $db=new PDO('MYSQL:host=localhost;dbname=mydb','root');
-      $sql="SELECT*FROM user WHERE username=? and password =?";
+      $sql="SELECT*FROM user WHERE username=? and password=?";
       $statement=$db->prepare($sql);
       $statement->execute([$usrename,$password]);
       $user=$statement->fetch(PDO::FETCH_ASSOC);
