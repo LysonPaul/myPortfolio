@@ -52,14 +52,7 @@ a:hover{
       height: 200px;
       width: 230px;
       padding: 20px;
-       
-}
-button{
-      background-color: rgb(250, 15, 15);
-      width: 70px;
-      border-radius: 50px;
-      color: aliceblue;
-      
+      border: 50px;         
 }
 h3{
       font-size: 20px;
@@ -87,37 +80,35 @@ h1{
       font-weight: lighter;
       font-family: wide latin;
 }
+h4{
+      text-align: center;
+}
 .sheet{
       float:left;
       color:#ff7200;
       font-size: 25px;
       background: local;     
 }
+.two{
+      float:right; 
+}
 .contact-section {
       padding: 50px;
       text-align: center;
       font-size: 15px;
       color: rgb(8, 8, 8);
-    
-}
-h{
-      color:black;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 35px;
-      font-weight: bold;
-}
-buttonh{
-      display: flex;
-      justify-content: right;
-      align-items: right;
-      padding: 20px;
-      float: right;
-      height: 80px;
 }
 #featured-projects{
       text-align: center;
       height: 650px;
 
+}
+.project-card{
+  max-width: 700px;
+  font-family: Poppins;
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+  margin:auto;
 }
 .projects-page{
       width: 100%;
@@ -139,42 +130,57 @@ buttonh{
 }    
 .projects-page li h2 {
       font-size:25px;
-}    
-.projects-page li img {
-      width: 100px;
-      
-      margin-right: 10px;
-}
-.contact-page{
-      text-align: center;
-      
-}
-#action{
-      height: 380px;
-      width: 100px;
-      float: le;
-}
-.contact-page h1 {
-      font-size: 2em;
-      margin-top: 0;
-}   
-.contact-page p{
-      margin-bottom: 1em;
 }
 .contact-page form {
       width: 50%;
       margin: 0 auto;
 }
-.contact-page form input {
-      margin-bottom: 1em;
+form input[type=submit]
+{
+	padding: 10px 40px;
+	background: #bb7d09;
+	border: none;
+	color: white;
+	font-family: Poppins;
+	font-weight: 700;
+      border-radius: 50px;
 }
-.contact-page form textarea {
-      margin-bottom: 1em;
+
+.form label{
+	color: gray;
+	text-transform: capitalize;
 }
-.contact-page form input, .contact-page form textarea {
-      border: 1px solid #ccc;
-      padding: 10px;
-}   
+.form{
+	max-width: 100%;
+	margin: 0 auto;
+	width: 50%;
+	background: #fff;
+	padding: 15px 30px;
+      
+}
+form input[type=text],
+input[type=password]{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #f1f1f1;
+  margin: 8px 0;
+
+}
+.contact-page{
+      background-color: #57462d;
+      background-size: 300px;
+      color: white;
+      padding: 20px;      
+}
+.contact-pa{
+      text-align: center;
+            
+}.contact-page-p2{
+      text-align: center;
+            
+}
+
 
 
 

@@ -6,34 +6,6 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <script>
-      function validateForm()
-       {
-        var x = document.form["myForm"]["fname"].value;
-         var name = document.form["myForm"]["sname"].value;
-         var email = document.form["myForm"]["email address"].value;
-         var message = document.form["myForm"]["textarea"].value;
-
-        if (x === '') {
-        alert('Space must be filled.');
-        return ;
-        }
-        else if(name === '') {
-        alert('Space must be filled.');
-        return ;
-        }
-        else if (email === '') {
-        alert('Please enter your email address.');
-        return;
-        }
-
-        if (message === '') {
-        alert('Please enter your message.');
-        return ;
-        }
-      }
-    </script>
-    <body>
     <header>
       <div>
         <p class="sheet">Paul Lyson
@@ -58,21 +30,58 @@
       </section>
       <section>
           <div class="contact-page">
-            <p>
+            <p1>
               Please feel free to contact us with any questions or inquiries.
-            </p>
-            <form id="action">
-            <form  name="myform" method="post" onsubmit="return validateForm()" >
-              First Name:<input type="text" name="Fname">
-              SurName:<input type="text" name="Sname">
-              Email address:<input type="email" name="Email address">
-              <textarea placeholder="Tell us your Message"></textarea>
-              <input type="submit" value="Submit">
-            </form>
-            <p>You can also reach us by phone at <strong>0990607716</strong> 
-            or by visiting our office at <strong>Luwinga near green Lodge,CA 12345</strong>.</p>
+            </p1>
+            <form id="form">
+              <form name="myForm" onsubmit="return validateForm()" method="post">
+                  <label for="name">Name</label><br>
+                  <input type="text" id="name"name="name"value="" required><br>
+                  <label for="email">email</label><br>
+                  <input type="text"id="email"name="email" required><br>
+                  <label for="password">Password</label><br>
+                  <input type="password"id="password"name="password"value="" required><br>
+                  <label for="password">confirm_Password</label><br>
+                  <input type="password"id="password"name="password" value="" required><br>
+                  <label for="phone">Phone Number</label><br>
+                  <input type="phone"id="phone"name="phone"value="+265"required><br>
+                  <label for="comment">Comment</label><br>
+                  <textarea name="message" rows="20" cols="50"></textarea><br><br>
+                  <input type="submit" placeholder="Register">
+          </form>	
           </div>
+          <script>
+            function validateForm()
+             {
+               var name = document.myform["myForm"]["name"].value;
+               var email = document.myform["myForm"]["email"].value;
+               var password = document.myform["myForm"]["password"].value;
+               var confirmpassword = document.myform["myForm"]["confirmpassword"].value;
+              if (name=== '') 
+              {
+              alert('Space must be filled.');
+              return ;
+              }
+              else if(email=== '') 
+              {
+              alert('Space must be filled.');
+              return ;
+              }
+              else if (password=== '') 
+              {
+              alert('Please enter your email address.');
+              return;
+              }
+              else 
+              {
+              alert('Please enter your message.');
+              return ;
+              }
+            }
+          </script>  
       </section>
+      <p2>You can also reach us by phone at <strong>0990607716</strong> 
+        or by visiting our office at <strong>Luwinga near green Lodge,CA 12345</strong>.</p2>
     <footer>
       <p>
         Dbchousedesign@gmail.com, Copyright &copy; #2023

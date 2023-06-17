@@ -9,11 +9,11 @@
   <body>
     <header>
       <div>
-        <p class="sheet">Paul Lyson
-        </p> 
-         <h1>
-          <span class="font"><i><b>Dbc</b></i></span>House Design</h1>  
-      </div>
+        <p class="sheet">Paul Lyson</p> 
+        <h1><span class="font"><i><b>Dbc</b></i></span>House Design</h1>
+        <form class="two">
+          <input type="submit" value="login" placeholder="login">
+        </form>  
         <ul>           
           <li><a href="index.html"><b>Home</b></a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -31,24 +31,42 @@
             Please enter your email address and subscribe. 
         </p2>
       </div>
-
     </section>
     <section id="contact">
       <h2>Contact Us</h2>
       <form >
-          <input type="text" placeholder="N ame">
+          <input type="text" placeholder="Name">
           <input type="email" placeholder="Email address"...required>
         <textarea placeholder="Message"></textarea>
         <input type="submit" class=value="Submit">
       </form>
     </section>
-    <section id="featured-projects">
-      <h2>Featured Projects</h2>
-      <div class="slideshow">
-        <img src="images/medical 1.jpg" alt="Project 1">
-        <img src="images/restaurant.jpg" alt="Project 2">
-        <img src="images/cop.jpg" alt="Project 3">
+    <section>
+      <h4>Recent Projects</h4><br>
+      <div class="project-card">
+      <img class="mySlides" src="images/cop.jpg" style="width: 60%">
+      <img class="mySlides" src="images/restaurant.jpg" style="width: 60%">
+      <img class="mySlides" src="images/medical 1.jpg" style="width: 60%">
       </div>
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 4 seconds
+    }
+    </script>
+    <p>And here is one of my recenct projects which was creating a student registration form.</p>
+    <a href="formss.html">View Project</a>
+    </div>
     </section>
     <footer>
        <p6>

@@ -1,19 +1,9 @@
-// Slideshow
-var slideshow = document.querySelector('.slideshow');
-var images = slideshow.querySelectorAll('img');
-var currentImage = 0;
-
-function nextImage() {
-  currentImage = (currentImage + 1) % images.length;
-  slideshow.style.backgroundImage = 'url(' + images[currentImage].src + ')';
-}
-
-setInterval(nextImage, 2000);
 
 // Contact form validation
 var form = document.querySelector('form');
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function(event) 
+{
   event.preventDefault();
 
   var name = document.querySelector('input[name="name"]').value;
@@ -66,3 +56,5 @@ function getGreeting() {
   }
 }
 document.querySelector('header h1').textContent = getGreeting();
+
+</script>
